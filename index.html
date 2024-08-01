@@ -40,6 +40,8 @@ tr {
 <body>
 <div class="contacts">
 <H1>Contacts</H1>
+<p>Here's the list of names and their associated slot numbers:</p>
+
 <table>
   <tr><th>Slot#</th><th>Name</th></tr>
   <tr><td>0</td><td>Arnold</td></tr>
@@ -57,7 +59,7 @@ var searchAgain = "Yes";
 
 // Use a while loop to search for name
 while (searchAgain.toLowerCase() === "yes") {
-  var slotNumber = prompt("Enter a slot number (0-5):");
+  var slotNumber = prompt("Please enter a slot number to find a name :");
   if (slotNumber !== null && slotNumber >= 0 && slotNumber < names.length) {
     alert("You selected " + names[slotNumber] + ".");
   } else {
